@@ -1,0 +1,9 @@
+Create table Admin(Aname varchar(21) primary key ,Apass varchar(20));
+
+Create table treks(tname varchar(40) primary key,loc varchar(50),duration varchar(50),people varchar(60),price integer,rate integer,photos varchar(90),t_type varchar(90),t_leader varchar(70) references trek_l(lname),description varchar(500));
+
+Create table customer(cmail varchar(20) primary key,cmob varchar(20),cpass varchar(25),cadd varchar(20) );
+
+Create table trek_l(lid integer primary key ,lname varchar(90) unique,lmob varchar(20),lstatus varchar(15),limg varchar(120),Position varchar(50));
+
+Create table contactus(uname varchar(40),uemail varchar(60),msg varchar(150));
